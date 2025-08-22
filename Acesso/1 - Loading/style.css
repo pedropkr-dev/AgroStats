@@ -1,0 +1,33 @@
+body { 
+    background-color: #00491E;
+}
+
+main{ 
+    margin: 0 auto;
+    background-color: #00491E;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+img {
+    width: 600px;
+    margin-top: -180px;
+}
+
+@media (max-width: 768px) {
+
+img {
+    width: 450px;
+}
+}
+
+@media (max-width: 450px) {
+
+img {
+    width: 400px;
+    margin-top: -20px;
+}
+
+}

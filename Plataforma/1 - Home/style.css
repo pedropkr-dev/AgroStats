@@ -1,0 +1,252 @@
+body { 
+    margin: 0 auto;
+    background-color: #00491E;
+    height: 100vh;
+}
+
+
+:root{ 
+    /* === Colors === */
+    --body-color: #00491E;
+    --sidebar-color: #052F14; 
+    --primary-color: #00491E;
+    --secundary-color: #003728; 
+    --text-color: #D3DBB7;
+
+    /* === Transition === */
+    --tran-02: all 0.2 ease; 
+    --tran-03: all 0.3 ease; 
+    --tran-04: all 0.4 ease; 
+    --tran-05: all 0.5 ease; 
+}
+
+    /* === Resuable CSS === */
+
+
+    /* === Sidebar === */
+
+
+
+.logo{ 
+    width: 270px;
+    display: flex;
+    margin-left: -30px;
+    transition: 0.3s;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: var(--sidebar-color);
+    width: 250px;
+    padding: 10px 14px;
+    transition: 0.5s;
+}
+
+
+.sidebar header{
+    position: relative;
+}
+
+.sidebar header .toggle{ 
+    position: absolute;
+    top: 50%;
+    padding-bottom: 1px;
+    right: -25px;
+    transform: translateY(-50%) rotate(180deg);
+    height: 30px;
+    width: 30px;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20%;
+    color: var(--text-color);
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.sidebar.close header .toggle{
+    transform: translateY(-50%);
+}
+
+.menu-bar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: -50px;
+    transition: 1s;
+}
+
+.sidebar li{
+    height: 70px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.sidebar li .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -5px;
+    min-width: 60px;
+    font-size: 40px;
+    color: #D3DBB7;
+}
+
+
+.sidebar li .text{ 
+    color: #D3DBB7;
+    font-size: 30px;
+    white-space: nowrap;
+}
+
+.sidebar li .menu{
+    height: 100%;
+    width: 260px;
+    margin-right: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.sidebar li .menu:hover{
+    transition: 0.5s;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.50);
+}
+
+.config{
+    margin-top: 450px;
+    display: flex;
+    text-decoration: none;
+    
+}
+
+.config:hover{
+    transition: 0.5s;
+    text-shadow: 0 14px 16px black;
+}
+
+.sidebar li .icone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -5px;
+    min-width: 60px;
+    font-size: 40px;
+    color: #4FDC00;
+}
+
+.sidebar li .icone:hover{
+    transition: 0.5s;
+    text-shadow: 0 6px 8px black;
+}
+
+.sidebar li .texto{ 
+    color: #4FDC00;
+    font-size: 30px;
+    transition: 0.3s;
+}
+
+
+/* === Sidebar Close === */
+
+.sidebar.close .logo{
+    width: 100px;
+    height: 118px;
+    overflow: hidden;
+    
+}
+
+.sidebar.close{
+    width: 80px;
+}
+
+.sidebar.close .text{
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.sidebar.close .texto{
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.sidebar.close .menu-links li {
+    margin-left: 10px;
+}
+
+.sidebar.close .menu-links li .config {
+    margin-left: 170px;
+}
+
+.sidebar.close .menu-links li .menu {
+    width: 60px;
+}
+
+    /* === Top-Bar === */
+
+.topbar{
+    background-color: #003527;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-box{ 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 200px;
+    background-color: #003728;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.50);
+    height: 45px;
+    width: 400px;
+    border-radius: 20px;
+    gap: 30px;
+}
+
+.search-box input{
+    height: 30px;
+    width: 300px;
+    background-color: transparent;
+    border: transparent;
+}
+
+.search-box .icone{
+    padding-top: 5px;
+    color: #D3DBB7;
+    font-size: 35px;
+    margin-right: -15px;
+}
+
+
+.Dúvidas{ 
+    padding-top: 10px;
+    margin-left: 700px;
+    color: #4FDC00;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.Conta{
+    margin-left: 30px;
+    padding-top: 10px;
+    color: #4FDC00;
+    font-size: 45px;
+    cursor: pointer;
+}
+
+
